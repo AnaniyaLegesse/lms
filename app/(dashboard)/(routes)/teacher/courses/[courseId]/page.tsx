@@ -4,6 +4,7 @@ import { db } from "@/lib/db";
 import { IconBadge } from "@/components/icon-badge";
 import { LayoutDashboard} from "lucide-react";
 import TitleForm from "./_components/title-form";
+import DescriptionForm from "./_components/description-form";
 
 
 const CoursesIdPage = async({
@@ -67,6 +68,10 @@ const CoursesIdPage = async({
                     initialData={course}
                     courseId={course.id}
                     />
+                <DescriptionForm
+                    initialData={course}
+                    courseId={course.id}
+                    />    
             </div>
 
            </div>
